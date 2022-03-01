@@ -11,7 +11,7 @@ public class SpringBootDevopsDemoApplication {
 
 	@GetMapping("/welcome")
 	public String welcome() {
-		return "Sprint boot application DevOps demo project - how are you";
+		return "Test Sprint boot application DevOps demo project - how are you";
 	}
 	public static void main(String[] args) {
 		SpringApplication.run(SpringBootDevopsDemoApplication.class, args);
