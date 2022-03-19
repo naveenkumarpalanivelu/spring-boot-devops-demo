@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage ("Clean and Install maven dependencies") {
             steps {
-                sh "mvn clean install"
+                echo "hello world"
             }
         }
     }
