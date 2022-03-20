@@ -4,9 +4,14 @@ pipeline {
         PATH = "/opt/maven/bin:${env.PATH}"
     }
     stages {
-        stage ("install maven dependencies") {
+        stage ("Maven: Clean and Install") {
             steps {
                 sh 'mvn clean install'
+            }
+        }
+        stage ("Maven: Build Artifact") {
+            steps {
+                sh 'mvn package'
             }
         }
     }
