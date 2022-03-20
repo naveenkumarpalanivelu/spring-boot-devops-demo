@@ -1,9 +1,9 @@
 pipeline {
     agent any
     stages {
-        stage ("Clean and Install maven dependencies") {
+        stage ("Clone from Github") {
             steps {
-                sh 'mvn clean install'
+                git credentialsId: 'Github', url: 'git@github.com:naveenkumarpalanivelu/spring-boot-devops-demo.git'
             }
         }
     }
