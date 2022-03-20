@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        PATH = '/opt/maven/bin:$PATH'
+        PATH+EXTRA = '/opt/maven/bin'
     }
     stages {
         stage ("install maven dependencies") {
